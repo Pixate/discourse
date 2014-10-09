@@ -123,6 +123,8 @@ GEM
     highline (1.6.20)
     hike (1.2.3)
     hiredis (0.4.5)
+    honeybadger (1.16.5)
+      json
     html_truncator (0.3.1)
       nokogiri (~> 1.5)
     httpauth (0.2.0)
@@ -172,6 +174,7 @@ GEM
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
+    newrelic_rpm (3.9.5.251)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     oauth (0.4.7)
@@ -381,6 +384,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    unicorn-worker-killer (0.4.2)
+      unicorn (~> 4)
 
 PLATFORMS
   ruby
@@ -410,6 +415,7 @@ DEPENDENCIES
   handlebars-source (~> 1.1.2)
   highline
   hiredis
+  honeybadger
   html_truncator
   image_optim
   image_sorcery
@@ -422,6 +428,7 @@ DEPENDENCIES
   mock_redis
   multi_json
   mustache
+  newrelic_rpm
   nokogiri
   oj
   omniauth
@@ -474,3 +481,4 @@ DEPENDENCIES
   uglifier
   unf
   unicorn
+  unicorn-worker-killer
